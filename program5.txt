@@ -1,0 +1,66 @@
+program 5 
+element type positive int or 0
+
+binary search tree
+use insert algorithm
+create tree using positive integers
+in order traversal of tree
+after creating, print out the order that each integer is hit in binary search fashion
+
+
+write two algorithms for this program and put them in main
+	treenodecount
+	treeleafcount
+
+delete a node
+do another in order traversal to show node has been deleted. use another binary search tree
+
+
+
+
+given first line of main
+binary tree.h 
+binary search tree.h 
+pure virtual situation 
+
+
+base class of binary tree 
+	these are public
+	tree node count
+	tree leaves count
+need to call them from main (public ones) to get to private ones
+use these names and need to implement these (WRITE YOUR OWN):
+	leaf count{}
+	node count{}
+
+
+write the main 
+given base and derived class
+no imp files
+
+
+
+int main psearchtree type
+
+create tree using insert called tree root (10 or 12 nums)
+stop loop by typing in 999
+
+run the in-order-traversal
+
+treeroot.inordertraversal
+	goes along each node and prints out all the numbers
+	prints out as a binary search tree
+	number of nodes = (tree node count) write own algorithm
+	number of leaves = (tree leaf count) write private version
+
+	treeroot.search(number) returns true or false if number is in tree or not
+	.deletenode(node) 
+	.inordertraversal 2nd time (`without the deleted node)
+
+
+assume
+
+
+
+
+
