@@ -336,29 +336,17 @@ int binaryTreeType<elemType>::max(int x, int y) const
 template <class elemType>
 int binaryTreeType<elemType>::nodeCount(nodeType<elemType> *p) const
 {
-    int count = 0;
-    if (p != NULL) {
-      count++;
-      count += nodeCount(p->lLink);
-      count += nodeCount(p->rLink);
-    }
-    else {
-      return count;
-    }
+  return p == NULL ? 
+    0 : 
+    1 + nodeCount(p->lLink) + nodeCount(p->rLink);
 }
 
 template <class elemType>
 int binaryTreeType<elemType>::leavesCount(nodeType<elemType> *p) const
 {
-    int count = 0;
-    if (p->lLink != NULL && p->rLink != NULL) {
-      count += leavesCount(p->lLink);
-      count += leavesCount(p->rLink);
-    }
-    else {
-      count++;
-    }
-    return count;
+  return p->lLink != NULL && p->rLink != NULL ? 
+    leavesCount(p->lLink) + leavesCount(p->rLink) : 
+    1;
 }
 
 #endif

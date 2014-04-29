@@ -2,7 +2,7 @@
 #include "binarySearchTree.h"
 using namespace std;
 
-int main() { 
+int main() {
 	bSearchTreeType<int> TreeRoot;
 	int uInput;
 
