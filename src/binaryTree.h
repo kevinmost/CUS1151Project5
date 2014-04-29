@@ -351,7 +351,7 @@ template <class elemType>
 int binaryTreeType<elemType>::leavesCount(nodeType<elemType> *p) const
 {
     int count = 0;
-    if (p != NULL) {
+    if (p->lLink != NULL && p->rLink != NULL) {
       count += leavesCount(p->lLink);
       count += leavesCount(p->rLink);
     }
