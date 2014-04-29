@@ -6,37 +6,37 @@ int main() {
 	bSearchTreeType<int> TreeRoot;
 	int uInput;
 
-	cout << "Please enter a number to add to a tree (-999 to quit): " << endl;
+	cout << "Now adding to tree (-999 to quit): " << endl;
 	cin >> uInput;
 	while (uInput != -999){
 		TreeRoot.insert(uInput);
-		cout << "Please enter a number to add to a tree (-999 to quit): " << endl;
+		cout << "Now adding to tree (-999 to quit): " << endl;
 		cin >> uInput;
 	}
 
-	cout << "In-order traversal of the tree:" << endl;
+	cout << "Tree in-order:" << endl;
 	TreeRoot.inorderTraversal(); 
 	cout << endl;
-	cout << "Number of nodes: " << TreeRoot.treeNodeCount() << endl; 
-	cout << "Number of leaves: " << TreeRoot.treeLeavesCount() << endl; 
+	cout << "Nodes: " << TreeRoot.treeNodeCount() << endl; 
+	cout << "Leaves: " << TreeRoot.treeLeavesCount() << endl; 
 
-	cout << "Please enter a number to delete from a tree (-999 to quit): " << endl;
+	cout << "Now deleting from tree (-999 to quit): " << endl;
 	cin >> uInput;
 	while (uInput != -999){
 		TreeRoot.deleteNode(uInput);
-		cout << "Please enter a number to delete from a tree (-999 to quit): " << endl;
+		cout << "Now deleting from tree (-999 to quit): " << endl;
 		cin >> uInput;
 	}
 
-	cout << "Please enter a number to delete from a tree (-999 to quit): " << endl;
+	cout << "Now searching tree (-999 to quit): " << endl;
 	cin >> uInput;
 	while (uInput != -999){
-		TreeRoot.search(uInput);
-		cout << "Please enter a number to delete from a tree (-999 to quit): " << endl;
+		cout << uInput << " is " << TreeRoot.search(uInput) ? "not " << " in this tree" << endl;
+		cout << "Now searching tree (-999 to quit): " << endl;
 		cin >> uInput;
 	}
 
-	cout << "In-order traversal of the tree:" << endl;
+	cout << "Tree in-order:" << endl;
 	TreeRoot.inorderTraversal();
 	cin.get(); 
 }

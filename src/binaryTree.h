@@ -346,7 +346,7 @@ int binaryTreeType<elemType>::leavesCount(nodeType<elemType> *p) const
 {
   return
     p == NULL ? 0 :
-    p->lLink == NULL && p->lLink == NULL ? 1 :
+    p->lLink == NULL && p->rLink == NULL ? 1 :
     leavesCount(p->lLink) + leavesCount(p->rLink);
 }
 
