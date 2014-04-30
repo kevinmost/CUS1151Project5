@@ -31,7 +31,12 @@ int main() {
 	cout << "Now searching tree (-999 to quit): " << endl;
 	cin >> uInput;
 	while (uInput != -999){
-		cout << uInput << " is " << TreeRoot.search(uInput) ? "not " << " in this tree" << endl;
+		if (TreeRoot.search(uInput)) {
+			cout << uInput << " found" << endl;
+		}
+		else {
+			cout << uInput << " not found" << endl;
+		}
 		cout << "Now searching tree (-999 to quit): " << endl;
 		cin >> uInput;
 	}
