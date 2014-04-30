@@ -4,7 +4,7 @@ using namespace std;
 
 int main() { 
 	bSearchTreeType<int> TreeRoot;
-	int uinput;
+	int uInput;
 
 	cout << "Please enter a number to add to a tree (-999 to quit): " << endl;
 	cin >> uInput;
