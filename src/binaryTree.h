@@ -339,8 +339,8 @@ int binaryTreeType<elemType>::nodeCount(nodeType<elemType> *p) const
     int count = 0;
     if (p != NULL) {
       count++;
-      count += nodesCount(p->lLink);
-      count += nodesCount(p->rLink);
+      count += nodeCount(p->lLink);
+      count += nodeCount(p->rLink);
     }
     else {
       return count;
